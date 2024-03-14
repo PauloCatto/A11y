@@ -1,4 +1,14 @@
-![Buscante](thumbnail.png)
+
+
+![Captura de tela 2024-03-13 213322](https://github.com/PauloCatto/A11y/assets/108766424/7fbf5369-58e8-4ea7-a8a6-1482d793ada7)
+<br>
+<br>
+
+![Captura de tela 2024-03-13 213435](https://github.com/PauloCatto/A11y/assets/108766424/aa07c269-3bef-4be9-b231-1c773d88e6cf)
+
+<br>
+<br>
+
 
 # Buscante
 
