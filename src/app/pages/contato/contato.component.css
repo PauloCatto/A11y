@@ -158,6 +158,12 @@ input::placeholder, textarea::placeholder{
   color: red;
 }
 
+.contato-botoes .botao-enviar[aria-disabled] {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
 .campo-form input[type="text"]:required:invalid,
 .campo-form input[type="email"]:required:invalid,
 .campo-form input[type="tel"]:required:invalid,

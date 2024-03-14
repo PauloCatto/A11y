@@ -7,20 +7,18 @@ import { SobreComponent } from './pages/sobre/sobre.component';
 export const routes: Routes = [
   {
     path: 'lista-livros',
-    component: ListaLivrosComponent
+    component: ListaLivrosComponent,
+    title: 'Busque um livro - Buscante'
   },
   {
     path: 'sobre',
-    component: SobreComponent
+    component: SobreComponent,
+    title: 'Mais informações - Buscante'
   },
   {
     path: 'contato',
-    component: ContatoComponent
-  },
-  {
-    path: '',
-    redirectTo: 'lista-livros',
-    pathMatch: 'full'
+    component: ContatoComponent,
+    title: 'Entre em contato - Buscante'
   },
   {
     path: '**',

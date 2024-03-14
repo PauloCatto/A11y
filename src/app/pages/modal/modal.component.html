@@ -1,14 +1,8 @@
-<dialog
-  [open]="statusModal"
-  class="container">
+<dialog cdkTrapFocus cdkTrapFocusAutoCapture="true" [open]="statusModal" class="container">
   <article class="card">
-    <img
-      class="imagem"
-      [src]="thumbnailUrl"
-      alt="Capa do livro: {{ livro.title }}"
-    >
+    <img class="imagem" [src]="thumbnailUrl" alt="Capa do livro: {{ livro.title }}">
     <section class="info-card">
-      <h2 class="titulo">{{ livro.title }}</h2>
+      <h2 [attr.aria-label]="'Título do livro' + livro.title ">{{ livro.title | slice:0:30 }}</h2>
       <p class="informacoes">Autoria:</p>
       <p class="resultado">{{ livro.authors }}</p>
       <p class="informacoes">Data de publicação:</p>
@@ -16,10 +10,13 @@
       <p class="informacoes">Editora:</p>
       <p class="resultado">{{ livro.publisher }}</p>
       <div class="botoes">
-        <button (click)="lerPrevia()" class="detalhes">Ler prévia</button>
+        <button [attr.aria-label]="'Ler prévia do livro' + livro.title" (click)="lerPrevia()" class="detalhes">Ler
+          prévia</button>
+        <button class="detalhes">Comprar livro</button>
       </div>
+
     </section>
-    <button (click)="fecharModal()" class="botao-fechar">
+    <button aria-label="Fechar modal" (click)="fecharModal()" class="botao-fechar">
       <span class="material-symbols-outlined">close</span>
     </button>
     <section class="sinopse">
